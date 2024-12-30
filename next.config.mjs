@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    images: {
+      domains: ['imagingedge.sony.net'], // Allow the domain
+    },
+  };
+  
+  export default nextConfig;
+  
