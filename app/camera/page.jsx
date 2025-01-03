@@ -1,3 +1,5 @@
+import CountTime from "../components/CountTime";
+import FocusTracker from "../components/focus-tracker/FocusTracker";
 import Tojjle from "../components/Tojjle";
 import { CameraProvider } from "../contexts/CameraContext";
 import Buttons from "./Buttons";
@@ -26,7 +28,8 @@ export default function Camera() {
     <CameraProvider>
       <div>
         <div className="flex justify-center align-center block">
-          <CameraComponent />
+          <FocusTracker />
+          
         </div>
         <div className="video-options">
           <Options />

@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import 'react-toastify/dist/ReactToastify.css'
 
 import Navbar from "./components/Navbar";
 import ModeSelector from "./components/ModeSelector";

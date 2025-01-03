@@ -6,7 +6,7 @@ export default function DynamicInput({
 }) {
   return (
     <input
-      className="w-[350px] bg-transparent p-2 border border-gray-300"
+      className="w-[350px] bg-transparent p-2 border border-gray-300 rounded outline-none"
       type={isNum ? "number" : `text`}
       onChange={(e) =>
         setInputVal(isNum ? Number(e.target.value) : e.target.value)

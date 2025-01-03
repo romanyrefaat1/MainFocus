@@ -10,23 +10,22 @@ export default function MainBtn({
   pBlock = 1.5,
   variant = "contained",
   backColor = `var(--main-color)`,
-  backDarkerColor = `var(--main-dark-color)`
+  backDarkerColor = `var(--main-dark-color)`,
 }) {
   return (
     <Button
       variant={variant}
       onClick={onClick || (() => {})}
-      sx={{
-        borderRadius: roundness,
-        backgroundColor: backColor,
-        color: 'var(--back-color)',
-        padding: `${pBlock * 8}px ${pInline * 8}px`,
-        fontWeight: 'bold',
-        '&:hover': {
-          backgroundColor: backDarkerColor, 
-        },
-        ...classList
-      }}
+      className={`
+        rounded
+        bg-[${mainColor}]
+        text-back
+        font-bold
+        py-[${pBlock * 8}px]
+        px-[${pInline * 8}px]
+        hover:bg-[${backDarkerColor}]
+        ${classList}
+      `}
     >
       {text}
     </Button>
